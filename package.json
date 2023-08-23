@@ -4,8 +4,8 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "storybook dev -p 6006",
-        "build": "storybook build",
+        "dev": "npm run lint && storybook dev -p 6006",
+        "build": "npm run lint && storybook build",
         "preview": "npm run build && npx http-server ./storybook-static",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
     },
