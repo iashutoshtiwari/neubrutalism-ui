@@ -7,7 +7,10 @@
         "dev": "npm run lint && storybook dev -p 6006",
         "build": "npm run lint && storybook build",
         "preview": "npm run build && npx http-server ./storybook-static",
-        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+        "vite-dev": "npm run lint && vite",
+        "vite-build": "npm run lint && vite build",
+        "vite-preview": "npm run lint && vite preview"
     },
     "dependencies": {
         "@mui/base": "^5.0.0-beta.11",

@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 import "./button.scss";
 
 export const Button = ({ label, ...props }) => {
-    return <ButtonBase {...props}>{label}</ButtonBase>;
+    return (
+        <ButtonBase className="button-main" {...props}>
+            {label}
+        </ButtonBase>
+    );
 };
 
 Button.propTypes = {
